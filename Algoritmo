@@ -1,0 +1,53 @@
+while True:
+    roupa = str(input("Digite sua numeração de roupa: "))
+    type(roupa)
+    numeracao = str
+    roupa=str
+    type(numeracao)
+    if numeracao=='P':
+        print("Seu tamanho é P")
+    elif numeracao=='M':
+        print("Seu tamanho é M")
+    elif numeracao=='G':
+        print("Seu tamanho é G")
+    else:
+        ("Não fabricamos seu tamanho informado. Obrigado pela preferência.")
+    moradia = list(input("Sua moradia fica aonde: "))
+    type(moradia)
+    moradia=list(moradia)
+    print("Escolha a loja aonde você deseja retirar seu produto.")
+    lojas = ('1-Neves', '2-Belo Horizonte','3-Matozinhos','4-Vespaziano','5-Brumadinho','6-Sair da Loja')
+    for i in range(len(lojas)):
+        print(lojas[i])
+    lojas=int(input("Desejo retirar na loja: "))
+    match lojas:
+        case 1:
+            print("Você escolheu a nossa loja de Neves. ")
+            print("Nessa loja temos as roupas das marcas Nike e Adidas.")
+            neves = ['Nike', 'Adidas']
+            print(neves[0],"(22)",neves[1],"(912)")
+        case 2: 
+            print("Você escolheu a nossa loja de Belo Horizonte. ")
+            roupa: input("Nessa loja temos as roupas das marcas Lacoste e Gucci.")
+            belohorizonte = ['Lacoste','Gucci']
+            print(belohorizonte[0],"(39)",belohorizonte[1],"(512)")
+        case 3:
+            print("Você escolheu a nossa loja de Matozinhos. ")
+            print("Nessa loja temos as roupas das marcas Lost e Kenner")
+            matozinhos = ['Lost', 'Kenner']
+            print(matozinhos[0],"(52)",matozinhos[1],"(614)")
+        case 4:
+            print("Você escolheu a nossa loja de Vespaziano. ")
+            print("Nessa loja temos as roupas das marcas Surfers e NBA")
+            vespaziano = ['Surfers', 'NBA']
+            print(vespaziano[0],"(189)",vespaziano[1],"(23)")
+        case 5:
+            print("Você escolheu a nossa loja de Brumadinho. ") 
+            print("Nessa loja temos as roupas das marcas NewEra e MCD")
+            brumadinho = ['NewEra','MCD']
+            print(brumadinho[0],"(234)",brumadinho[1],"(18)")
+        case 6:
+            print("Sair da loja")
+            break
+        
+print("obrigado por comprar conosco")
